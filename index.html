@@ -25,10 +25,10 @@
         body {
             font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            /* 多层背景：渐变遮罩 + 演唱会舞台图 */
+            /* 多层背景：渐变遮罩 + 薛之谦演唱会主视觉图 */
             background-image: 
-                linear-gradient(135deg, rgba(26, 26, 46, 0.96) 0%, rgba(22, 33, 62, 0.94) 50%, rgba(15, 52, 96, 0.96) 100%),
-                url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&q=80');
+                linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.80) 50%, rgba(15, 52, 96, 0.85) 100%),
+                url('image.png');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -41,8 +41,8 @@
         @supports not (background-attachment: fixed) {
             body {
                 background-image: 
-                    linear-gradient(135deg, rgba(26, 26, 46, 0.96) 0%, rgba(22, 33, 62, 0.94) 50%, rgba(15, 52, 96, 0.96) 100%),
-                    url('https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1920&q=80');
+                    linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.80) 50%, rgba(15, 52, 96, 0.85) 100%),
+                    url('image.png');
             }
         }
 
@@ -1122,6 +1122,263 @@
             </ul>
         </div>
 
+        <!-- 内场看台入口指南 -->
+        <div class="card fade-in delay-2">
+            <div class="card-header">
+                <div class="card-icon">🚪</div>
+                <div>
+                    <div class="card-title">内场看台入口指南</div>
+                    <div class="card-subtitle">根据票面区域选择正确入口，避免走冤枉路</div>
+                </div>
+            </div>
+
+            <!-- 入口总览 -->
+            <div style="background: rgba(0,217,255,0.1); border: 1px solid rgba(0,217,255,0.3); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                <div style="font-weight: 700; color: var(--accent); margin-bottom: 15px; font-size: 1.1rem;">📍 体育场入口分布</div>
+                <div style="color: rgba(255,255,255,0.9); line-height: 1.8;">
+                    青岛市民健身中心体育场共有<strong>北门</strong>和<strong>西门</strong>两个主要入口。入场时请务必查看门票上的<strong>入口信息</strong>和<strong>座位区域</strong>，选择对应入口进入。
+                </div>
+            </div>
+
+            <!-- 北门入口 -->
+            <div style="background: linear-gradient(135deg, rgba(0,200,83,0.15), rgba(0,150,60,0.15)); 
+                        border-radius: 15px; padding: 20px; margin-bottom: 20px; border-left: 4px solid var(--success);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <div style="width: 50px; height: 50px; background: var(--success); border-radius: 50%; 
+                                display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                        🚪
+                    </div>
+                    <div>
+                        <div style="font-size: 1.3rem; font-weight: 700; color: #fff;">北门入口（主入口）</div>
+                        <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">地铁C口/E口步行最近</div>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                    <div style="font-weight: 700; color: var(--success); margin-bottom: 10px;">✅ 适用区域：</div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                        <div style="background: rgba(0,200,83,0.2); padding: 8px 12px; border-radius: 8px; text-align: center;">
+                            内场 A/B/C/D 区
+                        </div>
+                        <div style="background: rgba(0,200,83,0.2); padding: 8px 12px; border-radius: 8px; text-align: center;">
+                            北看台全区
+                        </div>
+                        <div style="background: rgba(0,200,83,0.2); padding: 8px 12px; border-radius: 8px; text-align: center;">
+                            东看台部分区域
+                        </div>
+                    </div>
+                </div>
+
+                <div style="color: rgba(255,255,255,0.9); line-height: 1.8;">
+                    <strong>🗺️ 路线：</strong>地铁健身中心站 C口/E口出站 → 沿火炬路向东步行 → 看到体育场北门标识 → 安检入场<br>
+                    <strong>📏 距离：</strong>约 500-800 米，步行 8-10 分钟<br>
+                    <strong>💡 提示：</strong>北门是主入口，人流量最大，建议提前到达（17:30前）避开高峰
+                </div>
+            </div>
+
+            <!-- 西门入口 -->
+            <div style="background: linear-gradient(135deg, rgba(247,147,30,0.15), rgba(255,214,0,0.15)); 
+                        border-radius: 15px; padding: 20px; margin-bottom: 20px; border-left: 4px solid var(--secondary);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                    <div style="width: 50px; height: 50px; background: var(--secondary); border-radius: 50%; 
+                                display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+                        🚪
+                    </div>
+                    <div>
+                        <div style="font-size: 1.3rem; font-weight: 700; color: #fff;">西门入口（次入口）</div>
+                        <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">地铁D口步行可达</div>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                    <div style="font-weight: 700; color: var(--secondary); margin-bottom: 10px;">✅ 适用区域：</div>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+                        <div style="background: rgba(247,147,30,0.2); padding: 8px 12px; border-radius: 8px; text-align: center;">
+                            西看台全区
+                        </div>
+                        <div style="background: rgba(247,147,30,0.2); padding: 8px 12px; border-radius: 8px; text-align: center;">
+                            南看台部分区域
+                        </div>
+                    </div>
+                </div>
+
+                <div style="color: rgba(255,255,255,0.9); line-height: 1.8;">
+                    <strong>🗺️ 路线：</strong>地铁健身中心站 D口出站 → 沿敦信路向南步行 → 体育场西门 → 安检入场<br>
+                    <strong>📏 距离：</strong>约 600-900 米，步行 10-12 分钟<br>
+                    <strong>⚠️ 注意：</strong>散场时西门<strong>只出不进</strong>，仅用于疏散观众
+                </div>
+            </div>
+
+            <!-- 入口选择建议 -->
+            <div style="background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.3); border-radius: 12px; padding: 20px;">
+                <div style="font-weight: 700; color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">💡 入口选择建议</div>
+                
+                <ul class="tips-list" style="margin: 0;">
+                    <li class="success">
+                        <strong>查看门票：</strong>入场前务必查看门票上的"入口"和"区域"信息，按照指示选择对应入口。
+                    </li>
+                    <li>
+                        <strong>内场观众：</strong>所有内场站票区（A/B/C/D区）统一从<strong>北门</strong>进入，进场后按照场内指引找到对应区域。
+                    </li>
+                    <li>
+                        <strong>看台观众：</strong>北看台、东看台从<strong>北门</strong>进入；西看台、南看台从<strong>西门</strong>进入。具体以门票标注为准。
+                    </li>
+                    <li class="important">
+                        <strong>走错入口：</strong>如果走错入口，工作人员会引导您前往正确入口，但会浪费时间。建议提前确认。
+                    </li>
+                    <li>
+                        <strong>安检流程：</strong>两个入口均需经过安检（身份证核验 + 包裹检查 + 金属探测），预计每人耗时 1-2 分钟。
+                    </li>
+                    <li class="important">
+                        <strong>散场出口：</strong>散场时，北门和西门均可出场。但返回地铁站时，<strong>只能从C口或E口进站</strong>（位于北门候车环道），西门对应的D口只出不进。
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 入场时间建议 -->
+            <div class="highlight-box warning" style="margin-top: 20px;">
+                <strong>⏰ 入场时间建议：</strong><br>
+                • 17:30 - 18:00：最佳入场时间，人流适中<br>
+                • 18:00 - 18:30：入场高峰期，排队时间较长<br>
+                • 18:30 - 19:00：临近开场，安检队伍最长<br>
+                • 19:30：演唱会准时开场，迟到可能错过开场曲目
+            </div>
+
+            <!-- 现场示意图说明 -->
+            <div style="margin-top: 20px; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                <div style="font-weight: 700; color: var(--accent); margin-bottom: 12px; font-size: 1.1rem;">📸 现场导向标识</div>
+                <div style="color: rgba(255,255,255,0.85); line-height: 1.8; font-size: 0.95rem;">
+                    到达体育场后，沿途会有明显的<strong>入口指示牌</strong>和<strong>工作人员引导</strong>。如有疑问，可随时询问现场工作人员或志愿者。场馆周边设有<strong>临时咨询点</strong>，提供路线指引和应急服务。
+                </div>
+            </div>
+
+            <!-- 官方入口指南图片展示 -->
+            <div style="margin-top: 25px; padding: 25px; background: rgba(0,0,0,0.4); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                <div style="font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 10px; text-align: center;">
+                    📋 官方入口指南图解
+                </div>
+                <div style="font-size: 0.92rem; color: rgba(255,255,255,0.7); text-align: center; line-height: 1.7; margin-bottom: 20px;">
+                    以下是官方发布的入口分布图和现场导向标识，建议保存到手机方便现场查看
+                </div>
+
+                <!-- 图片网格展示 -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <!-- 图片1 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-56-57.png"
+                             alt="体育场入口分布总览图"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: 6px;">
+                                ① 体育场入口分布总览
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                清晰标注北门、西门位置及对应的看台区域分布，入场前务必确认自己的座位对应哪个入口。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片2 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-57-11.png"
+                             alt="北门入口详细指引"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--success); margin-bottom: 6px;">
+                                ② 北门入口详细指引
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                北门主入口的具体位置、适用区域（内场A/B/C/D区、北看台）及从地铁站的步行路线。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片3 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-57-19.png"
+                             alt="西门入口详细指引"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--secondary); margin-bottom: 6px;">
+                                ③ 西门入口详细指引
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                西门次入口的位置、适用区域（西看台、南看台）及注意事项（散场只出不进）。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片4 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-57-31.png"
+                             alt="内场区域分布图"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 6px;">
+                                ④ 内场区域分布图
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                360°四面台内场A/B/C/D区的具体位置，帮助内场观众快速找到自己的区域。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片5 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-57-40.png"
+                             alt="看台座位分区图"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--accent); margin-bottom: 6px;">
+                                ⑤ 看台座位分区图
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                东西南北四个看台的详细分区，包括区号、排号、座位号对应关系。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片6 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-59-38.png"
+                             alt="安检流程及注意事项"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--warning); margin-bottom: 6px;">
+                                ⑥ 安检流程及注意事项
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                入场安检的具体流程、禁止携带物品清单、身份证核验要求等重要信息。
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 图片7 -->
+                    <div style="background: rgba(0,0,0,0.3); border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08);">
+                        <img src="Snipaste_2026-03-13_12-59-45.png"
+                             alt="散场疏散路线图"
+                             style="display: block; width: 100%; height: auto;">
+                        <div style="padding: 14px 16px;">
+                            <div style="font-size: 1rem; font-weight: 700; color: var(--success); margin-bottom: 6px;">
+                                ⑦ 散场疏散路线图
+                            </div>
+                            <div style="font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.7;">
+                                演唱会结束后的疏散路线、返回地铁站的最佳路径（C口/E口进站）及注意事项。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 保存提示 -->
+                <div style="margin-top: 20px; padding: 15px; background: rgba(255,107,53,0.1); border-radius: 10px; border: 1px solid rgba(255,107,53,0.3);">
+                    <div style="font-weight: 700; color: var(--primary); margin-bottom: 8px;">💾 保存建议</div>
+                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.8;">
+                        建议长按保存这些图片到手机相册，或将本页面添加到主屏幕。现场信号可能拥挤，提前保存可以离线查看，避免找不到入口。
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- 时间规划 -->
         <div class="card fade-in delay-2">
             <div class="card-header">
@@ -1208,7 +1465,9 @@
                     <ul style="list-style: none; line-height: 2;">
                         <li>📱 身份证原件（实名制必须）</li>
                         <li>🎫 演唱会门票（电子票截图）</li>
-                        <li>🔋 充电宝（大容量，至少 10000mAh）</li>
+                        <li>🔋 充电宝（大容量，至少 10000mAh）<br>
+                            <span style="color: var(--warning); font-size: 0.85rem;">⚠️ 务必自带！门口租用散场难归还会持续扣费</span>
+                        </li>
                         <li>💵 现金/手机（场内消费需要）</li>
                         <li>🧥 薄外套（5月晚上风大）</li>
                         <li>👟 舒适运动鞋（内场必备）</li>
@@ -1299,6 +1558,9 @@
                 </li>
                 <li class="important">
                     <strong>📱 充电宝必带：</strong>全程 2.5-3 小时，拍照录像耗电快，充电宝是刚需。场馆内有充电服务但需排队且收费。
+                </li>
+                <li class="important">
+                    <strong>🚫 门口充电宝租用慎重：</strong>强烈不建议在场馆门口租用共享充电宝！散场时因交通管制和人流拥挤，很难找到原摊位归还，导致持续扣费（每小时3-5元，24小时后按购买价99元扣费）。务必自带充电宝，避免不必要的损失。
                 </li>
                 <li>
                     <strong>🎤 应援物品：</strong>主办方将为每位观众提供荧光棒和一次性雨衣。可自带应援灯牌（不超过 A3 大小），禁止带激光笔、大型横幅等。
