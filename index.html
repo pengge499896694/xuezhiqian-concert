@@ -2,7 +2,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
     <title>薛之谦2026“万兽之王”四巡青岛演唱会 - 史上最全交通防坑攻略</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
@@ -22,6 +23,12 @@
             --warning: #ffd600;
         }
 
+        html {
+            height: 100%;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
         body {
             font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
@@ -35,6 +42,11 @@
             color: #fff;
             line-height: 1.6;
             overflow-x: hidden;
+            min-height: 100%;
+            padding-top: env(safe-area-inset-top);
+            padding-right: env(safe-area-inset-right);
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
         }
         
         /* 备用背景方案（如果上面的图片加载失败） */
@@ -43,6 +55,12 @@
                 background-image: 
                     linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.80) 50%, rgba(15, 52, 96, 0.85) 100%),
                     url('image.png');
+            }
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            body {
+                background-attachment: scroll;
             }
         }
 
@@ -1087,7 +1105,7 @@
             <div class="info-grid">
                 <div class="info-item">
                     <div class="info-label">🎫 内场座位区</div>
-                    <div class="info-value">距离最近，临近舞台，观演沉浸感最强</div>
+                    <div class="info-value">距离最近，视野最佳，近距离感受舞台</div>
                 </div>
                 <div class="info-item">
                     <div class="info-label">🪑 看台座位区</div>
@@ -1108,7 +1126,7 @@
                     <strong>四面台优势：</strong>薛之谦会在四个方向走动表演，每个看台都有专属互动环节，不存在"背面"位置
                 </li>
                 <li>
-                    <strong>内场体验：</strong>距离舞台最近，氛围最热烈，内场同样按票面座位入场。上下台阶和进出通道时人流较集中，建议穿舒适运动鞋，女生尽量避免高跟鞋。
+                    <strong>内场体验：</strong>距离舞台最近，氛围最热烈，且为有座位区域，不需要全程站立。虽然大合唱和互动时很多人会起身，但整体观演体验依然更轻松。
                 </li>
                 <li>
                     <strong>看台体验：</strong>可以坐着观看，视野开阔，适合拍全景照片。前排效果最佳，后排需自备望远镜。
@@ -1218,7 +1236,7 @@
                         <strong>查看门票：</strong>入场前务必查看门票上的"入口"和"区域"信息，按照指示选择对应入口。
                     </li>
                     <li>
-                        <strong>内场观众：</strong>内场 A/B/C/D 区统一从<strong>北门</strong>进入，进场后按照票面座位信息和场内指引找到对应区域。
+                        <strong>内场观众：</strong>所有内场座位区（A/B/C/D区）统一从<strong>北门</strong>进入，进场后按照场内指引找到对应区域和座位。
                     </li>
                     <li>
                         <strong>看台观众：</strong>北看台、东看台从<strong>北门</strong>进入；西看台、南看台从<strong>西门</strong>进入。具体以门票标注为准。
@@ -1470,7 +1488,7 @@
                         </li>
                         <li>💵 现金/手机（场内消费需要）</li>
                         <li>🧥 薄外套（5月晚上风大）</li>
-                        <li>👟 舒适运动鞋（内场必备）</li>
+                        <li>👟 舒适运动鞋（长时间往返、排队更轻松）</li>
                     </ul>
                 </div>
                 <div style="background: rgba(0,217,255,0.1); border: 1px solid rgba(0,217,255,0.3); border-radius: 12px; padding: 15px;">
@@ -1566,7 +1584,7 @@
                     <strong>🎤 应援物品：</strong>主办方将为每位观众提供荧光棒和一次性雨衣。可自带应援灯牌（不超过 A3 大小），禁止带激光笔、大型横幅等。
                 </li>
                 <li>
-                    <strong>👟 穿着建议：</strong>内场和看台都有座位，但入场、离场和场内通行都需要步行较多，建议优先穿舒适运动鞋。5 月青岛昼夜温差大，带件薄外套。
+                    <strong>👟 穿着建议：</strong>内场为有座位区域，但入场、退场、互动和拍照时走动较多，仍然建议穿舒适运动鞋。看台座位区可穿休闲鞋。5 月青岛昼夜温差大，带件薄外套。
                 </li>
                 <li>
                     <strong>📸 拍照提醒：</strong>可以拍照录像，但禁止使用自拍杆、三脚架等。四面台每个角度都精彩，建议多换位置拍摄。
